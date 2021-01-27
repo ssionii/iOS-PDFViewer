@@ -76,11 +76,20 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mij-d9-TcA">
+                                <rect key="frame" x="1108" y="782" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="d9u-tJ-wCO" kind="push" id="YuI-zG-AW4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mij-d9-TcA" secondAttribute="trailing" constant="40" id="4DW-R3-uZu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wdc-e0-uFS" secondAttribute="trailing" constant="40" id="GOo-Um-DWV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mij-d9-TcA" secondAttribute="bottom" constant="2" id="a08-2m-251"/>
                             <constraint firstItem="wdc-e0-uFS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ccQ-an-Ubf"/>
                             <constraint firstItem="wdc-e0-uFS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="eQe-Uq-T7d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wdc-e0-uFS" secondAttribute="bottom" constant="40" id="spb-42-4DQ"/>
@@ -95,16 +104,17 @@
             </objects>
             <point key="canvasLocation" x="561.3065326633166" y="64.748201438848923"/>
         </scene>
-        <!--View Controller-->
+        <!--Root View Controller-->
         <scene sceneID="tPV-t3-lAw">
             <objects>
-                <viewController id="kof-Lh-gMg" sceneMemberID="viewController">
+                <viewController id="kof-Lh-gMg" customClass="RootViewController" customModule="PdfSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ci0-JC-hDa">
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ja1-zT-QQU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lQg-Me-D5a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wS6-VT-Sha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,6 +234,7 @@
                         <viewLayoutGuide key="safeArea" id="yeH-Be-i2L"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="RO7-bm-SVR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aU7-Fh-S9o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

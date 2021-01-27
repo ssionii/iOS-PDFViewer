@@ -167,8 +167,8 @@
 				6E4E372E25C0FFE000BC3CD3 /* ModelController.swift */,
 				6E4E373325C1019D00BC3CD3 /* DataViewController.swift */,
 				6E4E373825C1038800BC3CD3 /* TiledPDFScrollView.swift */,
-				6E4E373D25C1148F00BC3CD3 /* TiledPDFView.swift */,
 				6E4E374525C11DF300BC3CD3 /* RootViewController.swift */,
+				6E4E373D25C1148F00BC3CD3 /* TiledPDFView.swift */,
 			);
 			path = MagazineDetail;
 			sourceTree = "<group>";
