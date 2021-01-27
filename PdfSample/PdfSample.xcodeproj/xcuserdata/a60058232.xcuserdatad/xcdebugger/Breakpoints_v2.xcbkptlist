@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A4C1802F-5338-4FF9-8ED0-370F450BBDB0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E7E0A36-9337-45A4-9917-AC4E90C724E5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PdfSample/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "getJson()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BADC110-010F-4415-814A-774E905D3B8F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PdfSample/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "fetchPDF(title:pdfUrl:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ABC78860-2882-45F1-B1AC-A7BD5C89DBA6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PdfSample/MagazineList/MagazineListRouter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "passDataToMagazineDetail(source:destination:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ABC78860-2882-45F1-B1AC-A7BD5C89DBA6 - d02a057ef60e750b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PdfSample.MagazineListRouter.passDataToMagazineDetail(source: PdfSample.MagazineListDataStore, destination: inout PdfSample.MagazineDetailDataStore) -&gt; ()"
+                  moduleName = "PdfSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a60058232/Desktop/workspace/appzine_ios/ssionii/PdfSample/PdfSample/MagazineList/MagazineListRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "182">
+               </Location>
+               <Location
+                  uuid = "ABC78860-2882-45F1-B1AC-A7BD5C89DBA6 - d02a057ef60e750b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PdfSample.MagazineListRouter.passDataToMagazineDetail(source: PdfSample.MagazineListDataStore, destination: inout PdfSample.MagazineDetailDataStore) -&gt; ()"
+                  moduleName = "PdfSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a60058232/Desktop/workspace/appzine_ios/ssionii/PdfSample/PdfSample/MagazineList/MagazineListRouter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "2868">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1F7FCB90-A935-4C36-BA91-6B0B73CE5166"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PdfSample/Services/MagazineStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "fetchMagazine(id:pdfUrl:completionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

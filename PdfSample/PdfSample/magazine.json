@@ -1,0 +1,28 @@
+{
+    "magazine" : [
+        {
+			"id": 5,
+            "title" : "파일명이 한글이라면? 그리고 이렇게 길다면? 어떻게 될까. 그리고 점이 있다면...어떻게",
+            "thumbnail" : "https://www.bloter.net/wp-content/uploads/2016/08/%EC%8A%A4%EB%A7%88%ED%8A%B8%ED%8F%B0-%EC%82%AC%EC%A7%84.jpg",
+            "pdfUrl" : "http://www.peoplelikeus.org/piccies/codpaste/codpaste-teachingpack.pdf"
+        },
+        {
+			"id": 1,
+            "title" : "Enjoy the Game, Stay Safe2",
+            "thumbnail" : "https://i.pinimg.com/originals/32/d3/89/32d389e4018184c11222fe09caa71617.jpg",
+            "pdfUrl" : "http://www.africau.edu/images/default/sample.pdf"
+        },
+		{
+			"id": 2,
+			"title" : "Enjoy the Game, Stay Safe3",
+			"thumbnail" : "https://i.pinimg.com/originals/32/d3/89/32d389e4018184c11222fe09caa71617.jpg",
+			"pdfUrl" : "http://www.africau.edu/images/default/sample.pdf"
+		},
+		{
+			"id": 3,
+			"title" : "Enjoy the Game, Stay Safe4",
+			"thumbnail" : "https://i.pinimg.com/originals/32/d3/89/32d389e4018184c11222fe09caa71617.jpg",
+			"pdfUrl" : "http://www.africau.edu/images/default/sample.pdf"
+		}
+    ]
+}
