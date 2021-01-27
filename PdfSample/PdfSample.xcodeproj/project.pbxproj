@@ -27,6 +27,8 @@
 		6E4E373425C1019D00BC3CD3 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4E373325C1019D00BC3CD3 /* DataViewController.swift */; };
 		6E4E373925C1038800BC3CD3 /* TiledPDFScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4E373825C1038800BC3CD3 /* TiledPDFScrollView.swift */; };
 		6E4E373E25C1148F00BC3CD3 /* TiledPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4E373D25C1148F00BC3CD3 /* TiledPDFView.swift */; };
+		6E4E374625C11DF300BC3CD3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4E374525C11DF300BC3CD3 /* RootViewController.swift */; };
+		6E4E374B25C11EE000BC3CD3 /* input_pdf.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6E4E374A25C11EE000BC3CD3 /* input_pdf.pdf */; };
 		6E9D660125BE746C00C6AA9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D660025BE746C00C6AA9C /* AppDelegate.swift */; };
 		6E9D660325BE746C00C6AA9C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D660225BE746C00C6AA9C /* SceneDelegate.swift */; };
 		6E9D660525BE746C00C6AA9C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9D660425BE746C00C6AA9C /* MainViewController.swift */; };
@@ -77,6 +79,8 @@
 		6E4E373325C1019D00BC3CD3 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		6E4E373825C1038800BC3CD3 /* TiledPDFScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiledPDFScrollView.swift; sourceTree = "<group>"; };
 		6E4E373D25C1148F00BC3CD3 /* TiledPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiledPDFView.swift; sourceTree = "<group>"; };
+		6E4E374525C11DF300BC3CD3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		6E4E374A25C11EE000BC3CD3 /* input_pdf.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = input_pdf.pdf; sourceTree = "<group>"; };
 		6E9D65FD25BE746C00C6AA9C /* PdfSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PdfSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9D660025BE746C00C6AA9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E9D660225BE746C00C6AA9C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 				6E4E373325C1019D00BC3CD3 /* DataViewController.swift */,
 				6E4E373825C1038800BC3CD3 /* TiledPDFScrollView.swift */,
 				6E4E373D25C1148F00BC3CD3 /* TiledPDFView.swift */,
+				6E4E374525C11DF300BC3CD3 /* RootViewController.swift */,
 			);
 			path = MagazineDetail;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 		6E9D65FF25BE746C00C6AA9C /* PdfSample */ = {
 			isa = PBXGroup;
 			children = (
+				6E4E374A25C11EE000BC3CD3 /* input_pdf.pdf */,
 				6E4E371725BFD4E300BC3CD3 /* MagazineDetail */,
 				6E4E370C25BFBFCB00BC3CD3 /* Services */,
 				6E4E370625BFA5DF00BC3CD3 /* Workers */,
@@ -338,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E9D660D25BE746D00C6AA9C /* LaunchScreen.storyboard in Resources */,
+				6E4E374B25C11EE000BC3CD3 /* input_pdf.pdf in Resources */,
 				6E9D663725BE78A700C6AA9C /* magazine.json in Resources */,
 				6E9D660A25BE746D00C6AA9C /* Assets.xcassets in Resources */,
 				6E9D660825BE746C00C6AA9C /* Main.storyboard in Resources */,
@@ -380,6 +387,7 @@
 				6E4E373E25C1148F00BC3CD3 /* TiledPDFView.swift in Sources */,
 				6E4E370825BFA5EB00BC3CD3 /* MagazineWorker.swift in Sources */,
 				6E4E36F325BF9EC600BC3CD3 /* MagazineListWorker.swift in Sources */,
+				6E4E374625C11DF300BC3CD3 /* RootViewController.swift in Sources */,
 				6E4E372F25C0FFE000BC3CD3 /* ModelController.swift in Sources */,
 				6E4E372125BFD4FA00BC3CD3 /* MagazineDetailModels.swift in Sources */,
 				6E4E36F725BF9EC600BC3CD3 /* MagazineListInteractor.swift in Sources */,

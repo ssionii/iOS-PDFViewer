@@ -18,15 +18,14 @@ protocol MagazineDetailDisplayLogic: class
 	func displayMagazine(viewModel: MagazineDetail.FetchMagazine.ViewModel)
 }
 
-class MagazineDetailViewController: UIViewController, MagazineDetailDisplayLogic
-{
+class MagazineDetailViewController: UIViewController, UIPageViewControllerDelegate, MagazineDetailDisplayLogic {
+
 	var interactor: MagazineDetailBusinessLogic?
 	var router: (NSObjectProtocol & MagazineDetailRoutingLogic & MagazineDetailDataPassing)?
 
 	// MARK: Object lifecycle
 
-	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?)
-	{
+	override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?){
 		super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 		setup()
 	}
@@ -37,7 +36,8 @@ class MagazineDetailViewController: UIViewController, MagazineDetailDisplayLogic
 		setup()
 	}
 
-	// MARK: Setup
+
+	// MARK: - Setup
 
 	private func setup()
 	{
@@ -53,7 +53,7 @@ class MagazineDetailViewController: UIViewController, MagazineDetailDisplayLogic
 		router.dataStore = interactor
 	}
 
-	// MARK: Routing
+	// MARK: - Routing
 
 	override func prepare(for segue: UIStoryboardSegue, sender: Any?)
 	{
@@ -74,7 +74,7 @@ class MagazineDetailViewController: UIViewController, MagazineDetailDisplayLogic
 		fetchMagazine()
 	}
 
-	// MARK: Fetch magazine
+	// MARK: - Fetch magazine
 
 	var pdfView : PDFView?
 
@@ -97,6 +97,72 @@ class MagazineDetailViewController: UIViewController, MagazineDetailDisplayLogic
 	{
 		self.navigationController?.navigationBar.topItem?.title = viewModel.title
 		pdfView?.document = viewModel.pdfDocument
+	}
+
+
+	// MARK: - Page Controller
+
+	var pageViewController : UIPageViewController?
+	var modelController: ModelController?
+
+	func setPageController(){
+
+		pageViewController = UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
+		modelController = ModelController()
+
+		if let pageVC = pageViewController, let mController = modelController {
+
+			pageVC.delegate = self
+			let firstVC = mController.viewControllerAtIndex(0, storyboard: self.storyboard!) as DataViewController
+			let VCs : [DataViewController] = [firstVC]
+
+			pageVC.setViewControllers(VCs, direction: .forward, animated: false, completion: nil)
+			pageVC.dataSource = mController
+
+			self.addChild(pageVC)
+			self.view.addSubview(pageVC.view)
+
+			let pageViewRect = self.view.bounds
+			pageVC.view.frame = pageViewRect
+			pageVC.didMove(toParent: self)
+
+			self.view.gestureRecognizers = pageVC.gestureRecognizers
+
+		} else {
+			return
+		}
+	}
+
+
+	func pageViewController(_ pageViewController: UIPageViewController, spineLocationFor orientation: UIInterfaceOrientation) -> UIPageViewController.SpineLocation {
+
+		if orientation.isPortrait {
+			let curVC = pageViewController.viewControllers![0] as UIViewController
+			let VCs = [curVC]
+			pageViewController.setViewControllers(VCs, direction: .forward, animated: true, completion: nil)
+			pageViewController.isDoubleSided = false
+
+			return .min
+		}
+
+		let curVC = self.pageViewController?.viewControllers?[0] as! DataViewController
+
+		var vcPage : [UIViewController] = []
+		guard let indexOfCurVC = modelController?.indexOfViewController(curVC) else { return .mid }
+
+		if indexOfCurVC % 2 == 0 {
+			let nextVC : UIViewController = modelController!.pageViewController(pageViewController, viewControllerAfter: curVC)!
+
+			vcPage = [curVC, nextVC]
+		} else {
+			let preVC : UIViewController = modelController!.pageViewController(pageViewController, viewControllerBefore: curVC)!
+
+			vcPage = [preVC, curVC]
+		}
+
+		pageViewController.setViewControllers(vcPage, direction: .forward, animated: true, completion: nil)
+
+		return .mid
 	}
 
 }

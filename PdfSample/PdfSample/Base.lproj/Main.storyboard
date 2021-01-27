@@ -95,6 +95,78 @@
             </objects>
             <point key="canvasLocation" x="561.3065326633166" y="64.748201438848923"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="tPV-t3-lAw">
+            <objects>
+                <viewController id="kof-Lh-gMg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ci0-JC-hDa">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ja1-zT-QQU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wS6-VT-Sha" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="765"/>
+        </scene>
+        <!--DataViewController-->
+        <scene sceneID="Twk-Rg-w7G">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController" title="DataViewController" id="XgK-kG-QRz" customClass="DataViewController" customModule="PdfSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yse-Cy-Kdk">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aNh-0K-xUr">
+                                <rect key="frame" x="0.0" y="0.0" width="1194" height="814"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sq0-mL-RRE" customClass="TiledPDFScrollView" customModule="PdfSample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="1194" height="814"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIm-5o-NNe">
+                                                <rect key="frame" x="346" y="10" width="502" height="794"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SIm-5o-NNe" firstAttribute="top" secondItem="4YD-kj-Neh" secondAttribute="top" constant="10" id="Iwu-og-svn"/>
+                                            <constraint firstAttribute="trailing" secondItem="SIm-5o-NNe" secondAttribute="trailing" id="LZ8-Gn-OBk"/>
+                                            <constraint firstItem="SIm-5o-NNe" firstAttribute="leading" secondItem="4YD-kj-Neh" secondAttribute="leading" constant="346" id="XZ1-gO-N3Z"/>
+                                            <constraint firstItem="SIm-5o-NNe" firstAttribute="centerY" secondItem="Sq0-mL-RRE" secondAttribute="centerY" id="atT-jX-ILg"/>
+                                            <constraint firstAttribute="bottom" secondItem="SIm-5o-NNe" secondAttribute="bottom" constant="10" id="ppX-z3-SoG"/>
+                                            <constraint firstItem="SIm-5o-NNe" firstAttribute="centerX" secondItem="Sq0-mL-RRE" secondAttribute="centerX" id="yUp-sW-ImP"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="TTB-Eu-qrU"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="4YD-kj-Neh"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Sq0-mL-RRE" firstAttribute="top" secondItem="aNh-0K-xUr" secondAttribute="top" id="JKC-nQ-V3Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sq0-mL-RRE" secondAttribute="trailing" id="LQg-8o-u9d"/>
+                                    <constraint firstItem="Sq0-mL-RRE" firstAttribute="leading" secondItem="aNh-0K-xUr" secondAttribute="leading" id="c7B-Q5-KHl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sq0-mL-RRE" secondAttribute="bottom" id="hAk-eX-qfk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bbf-eV-zza"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bbf-eV-zza" firstAttribute="bottom" secondItem="aNh-0K-xUr" secondAttribute="bottom" id="3hP-Rd-gUD"/>
+                            <constraint firstItem="aNh-0K-xUr" firstAttribute="leading" secondItem="bbf-eV-zza" secondAttribute="leading" id="AkO-8x-24u"/>
+                            <constraint firstItem="aNh-0K-xUr" firstAttribute="top" secondItem="bbf-eV-zza" secondAttribute="top" id="LWQ-CJ-0kW"/>
+                            <constraint firstItem="bbf-eV-zza" firstAttribute="trailing" secondItem="aNh-0K-xUr" secondAttribute="trailing" id="jZd-2f-ryB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="Sq0-mL-RRE" id="1Jd-Cd-3es"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJa-UZ-9e3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1869.8492462311558" y="762.58992805755406"/>
+        </scene>
         <!--Magazine Detail View Controller-->
         <scene sceneID="f0l-qe-EHh">
             <objects>
@@ -141,6 +213,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTH-hz-eL9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-146.23115577889448" y="64.748201438848923"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="jVY-Yi-Hlp">
+            <objects>
+                <viewController id="d9u-tJ-wCO" customClass="RootViewController" customModule="PdfSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TC2-nj-yy1">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yeH-Be-i2L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aU7-Fh-S9o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1214" y="765"/>
         </scene>
     </scenes>
     <resources>

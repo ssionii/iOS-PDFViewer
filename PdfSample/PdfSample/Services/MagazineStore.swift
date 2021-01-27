@@ -66,7 +66,7 @@ class MagazineStore : MagazineStoreProtocol {
 			print(e.localizedDescription)
 		}
 
-		completionHandler { return pdfDocument }
+		completionHandler{ return pdfDocument }
 
 	}
 
